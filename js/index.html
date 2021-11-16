@@ -7,11 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
-  <div class="container">
+<body style=background-image:linear-gradient(green,yellow)>
+  <div style=background-image:linear-gradient(yellow,darkgreen) class="sidebar">
+    <p style=color:white><b>WELCOME!<br><br> 
+      From belly buttons to full bellies, you can help Improbable Beef create the next best dinner! 
+     Here at Improbable Beef, we are on the lookout for protein-synthesizing bacteria to replicate and replace 
+      beef, reducing the burden on cows and the environment while still providing the delicious flavor we know and love. Bacteria 
+      are found everywhere and the next place we're potentially looking is certainly close to home: your belly button! Thank you 
+      for contributing your belly button swab, please review your results here by selecting your Subject ID Number from the 
+      dropdown menu. As we examine bacteria for the next best beef, we will annouce the bacteria of interest. If your belly button 
+      contains the bacteria of interest, please reach out if you wish to participate in further studies!
+    </b></p>
+  </div>
+  <div style=font-family:sans-serif class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
@@ -20,14 +31,13 @@
     </div>
     <div class="row">
       <div class="col-md-2">
-        <div class="well">
-          <h5>Test Subject ID No.:</h5>
-          <!-- <select id="selDataset"></select> -->
+        <div style=background-image:linear-gradient(green,yellow) class="well">
+          <h5 style=color:white><b>Test Subject ID No.:</b></h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
+          <div style=background-image:linear-gradient(green,yellow) class="panel-heading">
+            <h3 class="panel-title"><b>Demographic Info</b></h3>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
@@ -38,6 +48,9 @@
       <div class="col-md-5">
         <div id="gauge"></div>
       </div>
+    </div>
+    <div class="row">
+      <p></p>
     </div>
     <div class="row">
       <div class="col-md-12">
